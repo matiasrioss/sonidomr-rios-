@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+body{
+    background-color: #FAD7A0 ;
+}
+
+
+
+
+
+.grid{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: repeat(4,1fr);
+    gap: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.grid > nav{
+    grid-row: 1/5;
+}
+.grid > header{
+    grid-column: 2/4;
+}
+.grid > aside{
+    grid-row: 2/4;
+    grid-column: 3/4;
+}
+.grid > footer{
+    grid-column: 2/3;
+}
+
+
+
+
+.grid-titulo{
+    text-align: center;
+    
+}
+
+.encabezado{
+   
+    display: inline-flex;
+   align-items:center;
+   text-align: center;
+   margin-left: 125px;
+   margin-top: 40px;
+   margin-right: 380px;
+   
+}
+
+
+
+
+
+
+
+
+.menucontinuo{
+    border: 3px outset black;
+    height: 350px;
+    background-color: beige;
+    text-align: justify;
+    padding-bottom: 20px;
+    list-style-type: none;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.menu{
+
+    margin-left: 80px;
+   align-content: center;
+   margin-top: 126px;
+   
+   
+   
+}
+
+li :hover{
+    background-color: #F6DDCC;
+    font-size: 20px;
+}
+li{
+    margin: 25px;
+    list-style-type: none;
+    text-decoration: none;
+    }
+
+
+
+    h4{
+        position: relative;
+        
+        border: 3px solid black;
+        margin: 3px;
+        padding: 18px;
+        margin-bottom: 30px;
+        background-color: beige;
+        bottom: 1px;
+        
+    }
+    h1{
+        position: relative;
+        margin-bottom: 25px;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+
+
+    .fotoempresa{
+        padding-top: 20px;
+        margin-left: 70px;
+        width: 180px;
+    
+    }
+
+
+    .footer{
+        position: relative;
+        text-align: center;
+        padding-top: 120px;
+        font-size: 20px;
+        align-content: center;
+        
+        }
+
+
+        .inicio{
+            position: fixed;
+            top: 660px;
+            left: 1100px; 
+            border: 2px solid black;
+        }
