@@ -55,6 +55,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    background-image: radial-gradient(rgb(145, 203, 203), beige);
+
     
 
     
@@ -74,6 +76,7 @@ body{
 li :hover{
     background-color: #F6DDCC;
     font-size: 20px;
+    transition: 95ms;
 }
 li{
     margin: 25px;
@@ -89,6 +92,10 @@ li{
     text-align: center;
     
 }
+.grid-titulo :hover{
+    background-color: aqua;
+    transition: 2s;
+}
 
 .encabezado{
    
@@ -99,6 +106,7 @@ li{
    margin-right: 380px;
    
 }
+
 
 
 
@@ -133,3 +141,33 @@ td{
     
 }
 
+tr :hover{
+    font-size: 20px;
+    transition: 300ms;
+    background-image: radial-gradient(rgb(145, 203, 203), beige);
+
+    
+    
+}
+
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+h2 {
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+.imganimada{
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}

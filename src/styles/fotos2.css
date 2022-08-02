@@ -108,6 +108,11 @@ li{
    
 }
 
+.encabezado :hover{
+    background-color: aqua;
+    transition: 3s;
+}
+
 
 .fotosequipos{
     width: 150px;
@@ -115,7 +120,7 @@ li{
     padding: 20px;
 }
 .fotosanimacion :hover{
-    width: 250px;
+    width: 200px;
     transition: 1s;
 }
 
@@ -158,6 +163,28 @@ position: fixed;
 top: 660px;
 left: 1100px; 
 border: 2px solid black;
+}
+
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+h2 {
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+.imganimada{
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
 }
 
 

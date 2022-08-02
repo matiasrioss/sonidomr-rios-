@@ -159,22 +159,55 @@ li{
     align-content: center;
     
     }
+
+
+    @keyframes aparecer {
+        0%{
+            opacity: 0;
+    
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    
+    h2 {
+        animation-duration: 4s;
+        animation-name: aparecer;
+        animation-iteration-count: infinite;
+    }
+    .imganimada{
+        animation-duration: 4s;
+        animation-name: aparecer;
+        animation-iteration-count: infinite;
+    }
  
 
 
     @media screen and (max-width:768px) {
+
+        .html{
+            width: 100%;
+        }
+
+        .grid2{
+            display: grid;
+            grid-template-areas: "titulo titulo"
+        }
+        
        
         .grid-titulo{
-            position: relative;
-            display:inline;
+            /* position: relative;
+            display:inline; */
             
         }
         
         .encabezado{
-            position: relative;
+            grid-area: "titulo";
+            /* position: relative;
             bottom: 40px;
             right: 100px;
-            width: 0px;
+            width: 0px; */
            
             display: inline-flex;
            align-items:flex-start;
@@ -183,11 +216,12 @@ li{
         }      
 
     .menucontinuo{
+        grid-area: "nav";
         position: relative;
-        right: 80px;
-        bottom: 125px;
+        /* right: 80px;
+        bottom: 125px; */
         border: 3px outset black;
-        height: 230px;
+        /* height: 230px; */
         background-color: beige;
         text-align: justify;
         padding-bottom: 50px;
@@ -231,22 +265,24 @@ li{
         }
         
         .texto-aside{
-            position: relative;
+            grid-area: "aside";
+            /* position: relative;
             right: 275px;
-            height: 355px;
+            height: 355px; */
             font-size: 14px;
             padding: 0px; 
-            width: 175px;
+            /* width: 175px; */
             text-align: center;
         }
         .footer{
-            position: relative;
-            right: 150px;
+            grid-area: "footer";
+            /* position: relative; */
+            /* right: 150px; */
             font-size: 11px;
             width: 180px;
             padding-top: 0px;
             height: 15px;
-            bottom: 0px;
+            /* bottom: 0px; */
             margin-top: 35px;
 
             
