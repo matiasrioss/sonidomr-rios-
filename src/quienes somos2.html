@@ -5,45 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quienes somos</title>
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="./styles/quienes somos 2.css" rel="stylesheet">
     <link rel="shortcout icon" href="img marcas/nota musical.png">
 </head>
 
 
 
-<body>
-    <main class="grid">
+<body">
+    <main class="grid flex-column">
         <nav>
             <div class="menu menu2">
-                <ul class="menucontinuo">
-                    <h3>Menu principal</h3>
-                    <li><a href="quienes somos2.html" target="_blank">Quienes somos</a></li>
-                    <li><a href="fotos2.html" target="_blank">Fotos</a></li>
-                    <li><a href="equipamiento2.html" target="_blank">Equipamiento</a></li>
-                    <li><a href="empresas2.html" target="_blank">Empresas</a></li>
-                    <li><a href="contacto2.html" target="_blank">Contacto</a></li>
-              
+                <ul class="nav nav-pills flex-column ">
+                    
+                    <li class="nav-item"><a href="quienes somos2.html" target="_blank" class="nav-link btn-dark">Quienes somos</a></li>
+                    <li class="nav-item"><a href="fotos2.html" target="_blank" class="nav-link text-dark">Fotos</a></li>
+                    <li class="nav-item"><a href="equipamiento2.html" target="_blank" class="nav-link text-dark">Equipamiento</a></li>
+                    <li class="nav-item"><a href="empresas2.html" target="_blank" class="nav-link text-dark">Empresas</a></li>
+                    <li class="nav-item"><a href="contacto2.html" target="_blank" class="nav-link text-dark">Contacto</a></li>
+        
                 </ul>
            </div>
         </nav>
         <header>
-            <div class="encabezado">
+            <div class="d-flex flex-row w-75 justify-content-center align-items-center mt-5">
     
                 <img class="imganimada" src="img marcas/OIP-removebg-preview.png" type="OIP" width="50">
    
                 
    
                 
-                <h2 class="grid-titulo2">EQUIPOS DE SONIDO MR</h2>
+                <h2>EQUIPOS DE SONIDO MR</h2>
 
                 
                    
                 
              </div>
         </header>
-        <section>
-            <h1>CONOCENOS</h1>
-            <p class="parrafo">Somos una empresa dedicada a toda solucion y asistencia tecnica 
+        
+        <section class="m-3 pb-5 align-center flex-row">
+            
+            <p class="parrafo p-3 mb-2 bg-dark text-white text-center w-75 m-5">Somos una empresa dedicada a toda solucion y asistencia tecnica 
                 referida a todo tipo de eventos empresariales.
                 Nos destacamos en el traslado, armado y operacion de sonido, 
                 iluminacion y efectos especiales.
@@ -52,15 +54,15 @@
                 inolvidable para todos los concurrentes.
                 </p>
         </section>
-        <aside>
-            <p class="parrafo2">
+        <aside class="parrafo3 flex-row">
+            <p class="parrafo2 p-3 mb-2 bg-dark text-white text-center m-3 ">
                 Buscanos ademas en nuestras redes sociales
                 y en youtube, donde podras encontrar material
                 exclusivo sobre todos los eventos realizados!
             </p>
         </aside>
         <section>
-            <div class="fotosanimacion">
+            <div class="fotosanimacion mb-1 align-center">
 
                 <img source src="img eventos/crobar fiesta.jpeg" type="crobar fiesta" class="fotos">
                 <img source src="img eventos/evento 1.jpeg" type="evento 1" class="fotos">
@@ -68,13 +70,18 @@
             
             </div>
         </section>
-        <footer class="footer">
+        <footer class="footer align-center">
             <h6>®Equipos de Sonido MR - Todos los derechos reservados 2022</h6>
         </footer>
         
     </main>
 
     <a href="index.html" class="inicio">Volver al inicio</a>
+
+
+
+   
+      
 
     
 </body>

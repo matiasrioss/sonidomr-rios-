@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotos</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link href="./styles/fotos2.css" rel="stylesheet">
     <link rel="shortcout icon" href="img marcas/nota musical.png">
 </head>
@@ -12,22 +13,22 @@
 
 
 <body>
-    <main class="grid">
+    <main class="rid flex-column grid">
         <nav>
             <div class="menu menu2">
-                <ul class="menucontinuo">
-                    <h3>Menu Principal</h3>
-                    <li><a href="quienes somos2.html" target="_blank">Quienes somos</a></li>
-                    <li><a href="fotos2.html" target="_blank">Fotos</a></li>
-                    <li><a href="equipamiento2.html" target="_blank">Equipamiento</a></li>
-                    <li><a href="empresas2.html" target="_blank">Empresas</a></li>
-                    <li><a href="contacto2.html" target="_blank">Contacto</a></li>
-              
+                <ul class="nav nav-pills flex-column ">
+                    
+                    <li class="nav-item"><a href="quienes somos2.html" target="_blank" class="nav-link text-dark">Quienes somos</a></li>
+                    <li class="nav-item"><a href="fotos2.html" target="_blank" class="nav-link btn-dark">Fotos</a></li>
+                    <li class="nav-item"><a href="equipamiento2.html" target="_blank" class="nav-link text-dark">Equipamiento</a></li>
+                    <li class="nav-item"><a href="empresas2.html" target="_blank" class="nav-link text-dark">Empresas</a></li>
+                    <li class="nav-item"><a href="contacto2.html" target="_blank" class="nav-link text-dark">Contacto</a></li>
+        
                 </ul>
-            </div>
+           </div>
         </nav>
         <header>
-            <div class="encabezado">
+            <div class="d-flex flex-row w-75 justify-content-center align-items-center mt-5">
     
                 <img class="imganimada" src="img marcas/OIP-removebg-preview.png" type="OIP" width="50">
    
@@ -41,9 +42,9 @@
         </header>
         <section>
             <body>
-                <h1>Nuestros Equipos</h1>
+                
                 <br>
-                <div class="fotosanimacion">
+                <div class="fotosanimacion m-5">
                 <img source src="img equipos/parlante 1.png" type="parlante 1" class="fotosequipos">
                 <img source src="img equipos/parlante 2.png" type="parlante 2" class="fotosequipos">
                 <img source src="img equipos/setup 1.png" type="setup 1" class="fotosequipos">
@@ -54,19 +55,20 @@
             </body>
             
         </section>
-        <aside>
-            <p class="parrafo">
+        <aside class="aside">
+            <p class="parrafo parrafo2 p-3  bg-dark text-white text-center m-3">
                 No te olvides de completar y detallanos 
                 tu solicitud del servicio 
                 en la seccion "contacto"
             </p>
         </aside>
         
-        <footer class="footer">
+        <footer class="footer align-center">
             <h6>®Equipos de Sonido MR - Todos los derechos reservados 2022</h6>
         </footer>
     </main>
-
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
     
 </body>
 </html>

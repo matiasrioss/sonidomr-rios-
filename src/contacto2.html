@@ -4,8 +4,10 @@
         <title>contacto</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/bootstrap.css">
         <link href="./styles/contacto2.css" rel="stylesheet">
         <link rel="shortcout icon" href="img marcas/nota musical.png">
+        
     </head>
 
 
@@ -14,21 +16,21 @@
         <main class="grid">
             <nav>
                 <div class="menu menu2">
-                    <ul class="menucontinuo">
-                        <h3>Contactanos</h3>
-                        <li><a href="quienes somos2.html" target="_blank">Quienes somos</a></li>
-                        <li><a href="fotos2.html" target="_blank">Fotos</a></li>
-                        <li><a href="equipamiento2.html" target="_blank">Equipamiento</a></li>
-                        <li><a href="empresas2.html" target="_blank">Empresas</a></li>
-                        <li><a href="contacto2.html" target="_blank">Contacto</a></li>
-                  
+                    <ul class="nav nav-pills flex-column ">
+                        
+                        <li class="nav-item"><a href="quienes somos2.html" target="_blank" class="nav-link text-dark">Quienes somos</a></li>
+                        <li class="nav-item"><a href="fotos2.html" target="_blank" class="nav-link text-dark">Fotos</a></li>
+                        <li class="nav-item"><a href="equipamiento2.html" target="_blank" class="nav-link text-dark">Equipamiento</a></li>
+                        <li class="nav-item"><a href="empresas2.html" target="_blank" class="nav-link text-dark">Empresas</a></li>
+                        <li class="nav-item"><a href="contacto2.html" target="_blank" class="nav-link btn-dark">Contacto</a></li>
+            
                     </ul>
-                </div>
+               </div>
             </nav>
 
             <header>
                 <header class="grid-titulo">
-                    <div class="encabezado">
+                    <div class="d-flex flex-row w-75 justify-content-center align-items-center mt-5">
         
                         <img src="img marcas/OIP-removebg-preview.png" type="OIP" width="50">
            
@@ -51,27 +53,26 @@
     
     
     
-    <fieldset class="cuadro">
+    <fieldset class="cuadro m-5">
 
-        <div class="interiorcuadro">
+        <div class="interiorcuadro pb-5">
+
+            <div class="row mt-5">
+                <div class="col">
+                    <p>Nombre</p>
+                  <input type="text" class="form" placeholder="" aria-label="First name">
+                </div>
+                <div class="col">
+                    <p>Apellido</p>
+                  <input type="text" class="form" placeholder="" aria-label="Last name">
+                </div>
+              </div>
     
 
         
-         <div class="nombre">
-            <label for="nombre">Nombre completo:</label><input type="text" name="nombre">
-         </div>
+        
 
-
-        <div>
-            <br>
-        </div><label for="email"> E-mail:</label> <input type="text" name="email">
-        </div>
-
-        <div class="interiorcuadro">
-            <br>
-            <label for="description">Servicio deseado:</label>
-            <textarea name="description"></textarea>
-        </div>
+      
         <br>
         <br>
         <div class="interiorcuadro">
@@ -105,20 +106,22 @@
         </div>
         <br>
 
-    <input type="reset" value="Limpiar contacto" class="boton interiorcuadro">
-    <input type="submit" value="Enviar" class="boton interiorcuadro">
+        <input class="btn btn-primary boton" type="reset" value="limpiar contacto">
+        <input class="btn btn-primary boton" type="submit" value="enviar">
 
     </div>
 
 </fieldset>
 </form>
             </section>
-            <aside class="aside">
-                <h3>INFORMACION</h3>
-                <p>Dejanos tus datos y nos estaremos comunicando a la brevedad,
+            <aside>
+                <div class="parrafo2 p-3 mb-2 bg-dark text-white text-center m-3 ">
+                     <h3>INFORMACION</h3>
+                     <p>Dejanos tus datos y nos estaremos comunicando a la brevedad,
                     de no recibir respuesta dentro de las 48hs chequear por favor 
                     la casilla de spam o correos no deseados, muchas gracias!
-                </p>
+                     </p>
+                </div>
             </aside>
             
             <footer class="footer">
@@ -128,6 +131,9 @@
 
             <a href="index.html" class="inicio">Volver al inicio</a>
         </main>
+
+
+        
 
 
 
