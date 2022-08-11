@@ -1,0 +1,7 @@
+1. correr comando sass:watch. Se corta ctrl C. npm run sass:watch
+2. transcribir las paginas .css y modulizarlos. 
+crear un archivo .scss para la pagina (ejemplo _home.scss) e importalo en index.scss (archivo principal)
+con @use './pages/nombredelapagina.scss'
+
+opcional: modulizar componentes chiquitos (ejemplo menu-activo) 
+usando @extend .clasebootstrap
