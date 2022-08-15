@@ -1,0 +1,26 @@
+.menu{
+  grid-area: "menu";
+  align-content: center;
+  
+  
+  
+}
+.menu-equipamiento{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 5rem;;
+  
+}
+tr :hover{
+
+   
+    transition: 150ms;
+    background-image: radial-gradient(rgb(79, 127, 127), rgb(238, 238, 185));
+}
+
+
+
+
+
+

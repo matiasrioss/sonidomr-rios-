@@ -5,3 +5,7 @@ con @use './pages/nombredelapagina.scss'
 
 opcional: modulizar componentes chiquitos (ejemplo menu-activo) 
 usando @extend .clasebootstrap
+
+
+use un map y map get en las html de contacto y de fotos
+ con el map de relevante y no relevante.

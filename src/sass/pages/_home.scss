@@ -1,0 +1,32 @@
+
+.video{
+  width: 600px;
+  top: 175px;
+  left: 340px;
+}
+
+@keyframes aparecer {
+  0%{
+      opacity: 0;
+
+  }
+  100%{
+      opacity: 1;
+  }
+}
+h4 {
+  animation-duration: 4s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+.imganimada{
+  animation-duration: 4s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+.estilosearch{
+  height: 1.5em;
+}
+.btn-outline-success{
+  padding-top: 0px;
+}

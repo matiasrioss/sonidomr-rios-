@@ -1,0 +1,54 @@
+
+ .cuadro{
+  position: relative;
+  top: 50px;
+  margin-bottom: 50px;
+  left: 50px;
+  
+  background-color: rgb(185, 182, 177);
+  
+  height: 300px;
+  border-radius: 10px;
+  display:flex;
+   
+}
+
+
+.columna1{
+  
+  display:contents; 
+}
+
+
+.interiorcuadro{
+  position:relative;
+  align-items: center;
+  display:flex;
+  gap: 2px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+    
+}
+
+
+.boton{
+  position: relative;
+   height: 30px;
+   
+   
+}
+
+.footer{
+  
+  
+  display: flex;
+  margin-right: 100px;
+  padding-top: 10px;
+  
+  
+  
+  
+  }
+
+
+

@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-coderhouse",
+  "version": "1.0.0",
+  "description": "Proyecto Final para curso HTML/CSS Coderhouse by Matias Rios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass ./src/sass/index.scss ./src/styles/sass.css",
+    "sass:watch": "sass --watch ./src/sass/index.scss ./src/styles/sass.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiasrioss/sonidomr-rios-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matiasrioss/sonidomr-rios-/issues"
+  },
+  "homepage": "https://github.com/matiasrioss/sonidomr-rios-#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}

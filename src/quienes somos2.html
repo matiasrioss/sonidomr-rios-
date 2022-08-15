@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quienes somos</title>
     <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="./styles/quienes somos 2.css" rel="stylesheet">
+    <link href="./styles/sass.css" rel="stylesheet">
     <link rel="shortcout icon" href="img marcas/nota musical.png">
 </head>
 
 
 
 <body">
-    <main class="grid flex-column">
+    <main class="grid">
         <nav>
-            <div class="menu menu2">
+            <div class="menu">
                 <ul class="nav nav-pills flex-column ">
                     
-                    <li class="nav-item"><a href="quienes somos2.html" target="_blank" class="nav-link btn-dark">Quienes somos</a></li>
+                    <li class="nav-item"><a href="quienes somos2.html" target="_blank" class="menu-activo">Quienes somos</a></li>
                     <li class="nav-item"><a href="fotos2.html" target="_blank" class="nav-link text-dark">Fotos</a></li>
                     <li class="nav-item"><a href="equipamiento2.html" target="_blank" class="nav-link text-dark">Equipamiento</a></li>
                     <li class="nav-item"><a href="empresas2.html" target="_blank" class="nav-link text-dark">Empresas</a></li>
@@ -45,14 +45,36 @@
         
         <section class="m-3 pb-5 align-center flex-row">
             
-            <p class="parrafo p-3 mb-2 bg-dark text-white text-center w-75 m-5">Somos una empresa dedicada a toda solucion y asistencia tecnica 
+            <p class="parrafo p-3 mb-2 bg-dark text-white text-center w-75 m-4 mx-auto">Somos una empresa dedicada a toda solucion y asistencia tecnica 
                 referida a todo tipo de eventos empresariales.
                 Nos destacamos en el traslado, armado y operacion de sonido, 
                 iluminacion y efectos especiales.
                 Nuestro objetivo es generar en nuestros clientes una tranquilidad
                 absoluta al momento de realizar su evento, logrando ademas un momento
                 inolvidable para todos los concurrentes.
-                </p>
+            </p>
+            <div id="carouselExampleControls" class="carousel slide w-50 mx-auto mt-3" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img eventos/crobar fiesta.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img eventos/evento 1.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img eventos/evento 2.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              
         </section>
         <aside class="parrafo3 flex-row">
             <p class="parrafo2 p-3 mb-2 bg-dark text-white text-center m-3 ">
@@ -60,15 +82,10 @@
                 y en youtube, donde podras encontrar material
                 exclusivo sobre todos los eventos realizados!
             </p>
+            
         </aside>
         <section>
-            <div class="fotosanimacion mb-1 align-center">
-
-                <img source src="img eventos/crobar fiesta.jpeg" type="crobar fiesta" class="fotos">
-                <img source src="img eventos/evento 1.jpeg" type="evento 1" class="fotos">
-                <img source src="img eventos/evento 2.jpeg" type="evento 2" class="fotos">
             
-            </div>
         </section>
         <footer class="footer align-center">
             <h6>®Equipos de Sonido MR - Todos los derechos reservados 2022</h6>
@@ -83,6 +100,8 @@
    
       
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
 </body>
 </html>

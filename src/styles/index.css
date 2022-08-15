@@ -104,9 +104,7 @@
 }
 .menu{
 
-     margin-left: 80px;
-    align-content: center;
-    margin-top: 135px;
+    margin-top: 8.75em;
     
     
     
@@ -151,7 +149,7 @@ li{
 .footer{
     position: relative;
     text-align: center;
-    padding-top: 160px;
+    padding-top: 140px;
     font-size: 20px;
     align-content: center;
     
@@ -159,6 +157,7 @@ li{
 
     body{
         background-color: #FAD7A0 ;
+        
     }
 
     
@@ -181,7 +180,7 @@ li{
         }
     }
     
-    h2 {
+    h4 {
         animation-duration: 4s;
         animation-name: aparecer;
         animation-iteration-count: infinite;
@@ -192,6 +191,13 @@ li{
         animation-iteration-count: infinite;
     }
 
+
+    .estilosearch{
+        height: 1.5em;
+    }
+    .btn-outline-success{
+        padding-top: 0px;
+    }
    
 
 

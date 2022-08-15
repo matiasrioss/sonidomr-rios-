@@ -1,0 +1,132 @@
+@use './pages/home.scss';
+@use './pages/quienes-somos';
+@use './pages/fotos';
+@use './pages/equipamiento';
+@use './pages/empresas';
+@use './pages/contacto';
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #FAD7A0 ;
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  height: 100vh;
+  gap: 10px;
+
+  nav{
+    grid-row: 1/5;
+  }
+  header{
+    grid-column: 2/4 
+  }
+  aside{
+    grid-row: 2/4;
+    grid-column: 3/4;
+  }
+  footer{
+    grid-column: 2/3;
+  }
+  section{
+    grid-row: 2/4;
+  }
+}
+
+.grid{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: repeat(4,1fr);
+  gap: 10px;
+
+  nav{
+    grid-row: 1/5;
+  }
+  header{
+    grid-column: 2/4;
+  }
+  aside{
+    grid-row: 2/4;
+    grid-column: 3/4;
+  }
+  footer{
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+}
+
+.grid-titulo{
+  text-align: center;
+  :hover{
+    transition: 3s;
+  }
+}
+
+.menu{
+  margin-top: 8.75em;
+  li{
+    margin: 1em;
+    list-style-type: none;
+    text-decoration: none;
+    :hover{
+      background-color: #F6DDCC;
+      font-size: 20px;
+      transition: 95ms;
+    }
+  }
+}
+
+.menu-activo{
+  @extend .btn;
+  @extend .text-white;
+  @extend .nav-link;
+  @extend .bg-dark;
+}
+
+.inicio{
+  position: fixed;
+  top: 40em;
+  left: 68em; 
+  border: 2px solid black;
+}
+
+.footer{
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  align-content: center;
+  
+}
+$info: (
+  relevante: #d24141,
+  norelevante: #2981ee
+
+);
+@each $modo,$color in $info {
+  .fondomodo--#{$modo} {
+    background-color: $color;
+  }
+
+  
+}
+@mixin ubicacionfooter {
+  display: flex;
+  text-align: center;
+  left: 50px;
+  justify-content: center;
+  text-decoration: underline;
+  
+  
+}
+.footer{
+  @include ubicacionfooter;
+}
+

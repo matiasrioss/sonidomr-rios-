@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/bootstrap.css">
-        <link href="./styles/contacto2.css" rel="stylesheet">
+        <link href="./styles/sass.css" rel="stylesheet">
         <link rel="shortcout icon" href="img marcas/nota musical.png">
         
     </head>
@@ -15,14 +15,14 @@
     <body>
         <main class="grid">
             <nav>
-                <div class="menu menu2">
-                    <ul class="nav nav-pills flex-column ">
+                <div class="menu">
+                    <ul class="nav nav-pills flex-column menu ">
                         
                         <li class="nav-item"><a href="quienes somos2.html" target="_blank" class="nav-link text-dark">Quienes somos</a></li>
                         <li class="nav-item"><a href="fotos2.html" target="_blank" class="nav-link text-dark">Fotos</a></li>
                         <li class="nav-item"><a href="equipamiento2.html" target="_blank" class="nav-link text-dark">Equipamiento</a></li>
                         <li class="nav-item"><a href="empresas2.html" target="_blank" class="nav-link text-dark">Empresas</a></li>
-                        <li class="nav-item"><a href="contacto2.html" target="_blank" class="nav-link btn-dark">Contacto</a></li>
+                        <li class="nav-item"><a href="contacto2.html" target="_blank" class="menu-activo">Contacto</a></li>
             
                     </ul>
                </div>
@@ -30,19 +30,18 @@
 
             <header>
                 <header class="grid-titulo">
-                    <div class="d-flex flex-row w-75 justify-content-center align-items-center mt-5">
-        
-                        <img src="img marcas/OIP-removebg-preview.png" type="OIP" width="50">
-           
-                        
-           
-                        
-                        <h2 class="grid-titulo2">EQUIPOS DE SONIDO MR</h2>
-    
-                        
-                           
-                        
-                     </div>
+                    <header>
+                        <div class="d-flex flex-row w-75 justify-content-center align-items-center mt-5">
+                
+                            <img class="imganimada" src="img marcas/OIP-removebg-preview.png" type="OIP" width="50">
+               
+                            
+               
+                               <div>
+                                   <h2 class="titulo" class="grid">EQUIPOS DE SONIDO MR</h2>
+                               </div>
+                            
+                   </div>
                 </header>
             </header>
 
@@ -53,69 +52,94 @@
     
     
     
-    <fieldset class="cuadro m-5">
+    <fieldset class="cuadro w-75 p-3 ">
 
-        <div class="interiorcuadro pb-5">
+        <div class="interiorcuadro">
 
-            <div class="row mt-5">
-                <div class="col">
-                    <p>Nombre</p>
-                  <input type="text" class="form" placeholder="" aria-label="First name">
-                </div>
-                <div class="col">
-                    <p>Apellido</p>
-                  <input type="text" class="form" placeholder="" aria-label="Last name">
-                </div>
-              </div>
+            <div class="columna1">
+                <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                    </div>
+                  </div>
+
+                    <div class="p-3">
+                    <p>Desea combo iluminacion?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Si
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          No
+                        </label>
+                      </div>
+                     </div>
+
+
+            </div>
     
 
         
         
 
       
-        <br>
-        <br>
-        <div class="interiorcuadro">
+             <br>
+             <br>
+            <div class="interiorcuadro">
+                
 
-            <select>
-                <option>Marca setup Dj</option>
-                <option>dennon</option>
-                <option>pioneer</option>
-                <option>allen & heath</option>
-             </select>
-             <select>
-                <option>Marca sonido</option>
-                <option>electro voice</option>
-                <option>jbl</option>
-                <option>qsc</option>
-            </select>
+                <select class="form-select " style="width: 120px;"; aria-label="Default select example">
+                    <option selected>Setup Dj</option>
+                    <option value="1">Pioneer</option>
+                    <option value="2">Dennon</option>
+                    <option value="3">Numark</option>
+                  </select>
+                  
+                  
+                  <select class="form-select " style="width: 120px;"; aria-label="Default select example">
+                    <option selected>Sonido</option>
+                    <option value="1">Electro Voice</option>
+                    <option value="2">Qsc</option>
+                    <option value="3">JBL</option>
+                  </select>
 
-        </div>
-        <br>
-        <div class="interiorcuadro">
-            <input type="checkbox"> <label for="descuento si">Quiere recibir descuentos?</label>
-        </div>
-        <br>
+            </div>
+             <br>
+            <div >
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                    <label class="form-check-label" for="flexCheckIndeterminate">
+                      Quiere recibir descuentos?
+                    </label>
+                  </div>
+            </div>
+            <br>
         
         
-        <div class="interiorcuadro">
-            <p>Desea combo iluminacion?</p>
-            <input type="radio" name="iluminacion" value="si"> Si
-            <input type="radio" name="iluminacion" value="no"> No 
+            
 
+            <div>
+             
+        
+             <input class="btn btn-primary boton " type="reset" value="limpiar contacto">
+             <input class="btn btn-primary boton  " type="submit" value="enviar">
+            
+            </div>
+            
         </div>
-        <br>
 
-        <input class="btn btn-primary boton" type="reset" value="limpiar contacto">
-        <input class="btn btn-primary boton" type="submit" value="enviar">
-
-    </div>
-
-</fieldset>
-</form>
+     </fieldset>
+            </form>
             </section>
             <aside>
-                <div class="parrafo2 p-3 mb-2 bg-dark text-white text-center m-3 ">
+                <div class="parrafo2  fondomodo--relevante text-white  m-5 w-75 ">
                      <h3>INFORMACION</h3>
                      <p>Dejanos tus datos y nos estaremos comunicando a la brevedad,
                     de no recibir respuesta dentro de las 48hs chequear por favor 
@@ -124,13 +148,11 @@
                 </div>
             </aside>
             
-            <footer class="footer">
-                <h6>®Equipos de Sonido MR - Todos los derechos reservados 2022</h6>
-            </footer>
+            
 
 
             <a href="index.html" class="inicio">Volver al inicio</a>
-        </main>
+            </main>
 
 
         
