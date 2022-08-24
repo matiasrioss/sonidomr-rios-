@@ -7,5 +7,11 @@ opcional: modulizar componentes chiquitos (ejemplo menu-activo)
 usando @extend .clasebootstrap
 
 
-use un map y map get en las html de contacto y de fotos
- con el map de relevante y no relevante.
+use un map y map get en las html de "contacto" y "fotos"
+ con el map de relevante y no relevante indique colores rojo y celeste, aplicandolo luego en los recuadros de informacion respectivos.
+ Luego realice el mixin con respecto al footer, reubicandolo y poniendole un subrayado.
+ Con respecto al extend fue utilizado en el menu activo del nav, el mismo aplica de igual forma en todas las html.
+ para finalizar utilice seo con la etiqueta meta en el head del index, describiendo keywords y luego
+ otra misma etiqueta describiendo brevemente el servicio ofrecido en la web.
+
+ 
